@@ -1,0 +1,9 @@
+version: "3"
+
+tasks:
+  generate:
+    alias:
+      - gen
+    desk: "Generate code from proto files"
+    cmds: 
+      - protoc -I proto proto/sso/sso.proto --go_out=./gen/go/sso --go_opt=paths=source_relative --go-grpc_out=./gen/go/sso --go-grpc_opt=paths=source_relative
