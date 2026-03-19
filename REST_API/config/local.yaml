@@ -1,0 +1,8 @@
+env: "local" # окржуение, в котором загружают приложение
+storage_path: "/Users/dmitrijmilchakov/projects/REST_API/storage/storage.db" # путь до файла с бд
+http_server: 
+  address: "localhost:8082"
+  timeout: 4s         # таймаут на чтение/отправку запроса
+  idle_timeout: 60s  # время жизни соединения с клиентом
+  user: "myuser"
+  password: "mypass"
